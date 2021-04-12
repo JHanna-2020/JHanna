@@ -1,0 +1,47 @@
+body{
+    font-family: sans-serif;
+}
+h1{
+    text-align: center;
+    font-family: 'Cedarville Cursive', cursive;
+}
+h2{
+    text-align: center;
+}
+table,td,th{
+    border-collapse: collapse;
+    border: 1px solid black;
+    padding: 0 100px;
+}
+th{
+    background-color: skyblue;
+}
+label{
+    float:left;
+}
+#addBooks{
+float: right;
+cursor: pointer;
+}
+#bookForm{
+    width: 500px;
+    height: 500px;
+    background:rosybrown;
+    float:right;
+    display: none;
+}
+#form{
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+#authorInput{
+    margin-left:20px;
+}
+#genreSelect{
+    width: 155px;
+    margin-left:20px;
+}
+#addNotes{
+    float:right;
+}

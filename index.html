@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+</head>
+<body onload="updateTable();">
+    <script src="index.js"></script>
+   <h1>Books I've Read</h1> 
+   <p>Find Highlights and Notes from Books I've Read Below </p>
+   <button id="addBooks" onclick="myFunction();">Add Books</button>
+    <br>
+    <br>
+   <div id="bookForm">
+
+       <h2>Add Books</h1>
+        <form action="" id="form">
+            <label for="">Book Title: </label>
+            <input type="text" name="" id="bookTitleInput">
+            <br>
+            <br>
+            <label>Author: </label>
+            <input type="text" name="" id="authorInput">
+            <br>
+            <br>
+            <label for="">Genre:</label>
+            <select name="" id="genreSelect">
+                <option value=""></option>
+                <option value="Fantasy">Fantasy</option>
+                <option value="Sci-Fi">Sci-Fi</option>
+                <option value="Historical Fiction">Historical Fiction</option>
+                <option value="Fiction">Fiction</option>
+                <option value="Fiction">Sci-Fi</option>
+
+            </select>
+            <br>
+            <br>
+            <button type="button" onclick="addBook(); updateTable();">Submit</button>
+            <button type="button" onclick="localStorage.clear();">Clear localStorage</button>
+        </form>
+   </div>
+   <div id="data">
+       <table id="table">
+           <tr>
+               
+               <th>Title</th>
+               <th>Author</th>
+               <th>Genre</th>
+            </tr>
+       </table>
+   </div>
+</body>
+
+</html>
